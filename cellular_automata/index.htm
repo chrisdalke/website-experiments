@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+
+    <meta name="description" content="Chris Dalke's portfolio website" />
+    <meta name="robots" content="index,follow" />
+    <meta name="copyright" content="Copyright (c) Chris Dalke" />
+
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Cellular Automata by Chris Dalke</title>
+
+    <link href="main.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <!--<div class="button back-button">Return to Projects</div>-->
+
+    <div id="side-menu">
+        <div id="side-menu-show-button">Close Menu &#9776; </div>
+        <div id="side-menu-content">
+            <h1>Cellular Automata</h1><p> by Chris Dalke</p>
+            <p>
+            This HTML experiment runs a simulation of Conway's Game of Life, a well-known cellular automaton.
+        </p>
+            <h1>Controls</h1>
+            <p>
+            <ul>
+            <li>Space to pause/unpause</li>
+            <li>While paused, left click to place, right click to remove</li>
+            </ul>
+            </p>
+            <h1>Tools</h1>
+            <p>
+            Ruleset: </br>
+
+            <select id="ruleset">
+              <option value="gameOfLifeRule">Game of Life</option>
+              <option value="virusRule">Virus</option>
+              <option value="highLifeRule">HighLife</option>
+              <option value="flockRule">Flock</option>
+              <option value="mazeRule">Maze 1</option>
+              <option value="mazeRule2">Maze 2</option>
+              <option value="lifeWithoutDeathRule">Life Without Death</option>
+            </select>
+            
+            <a href="" id="pause">Pause/Unpause</a>
+            <a href="" id="load-random">Randomize Grid</a>
+            <a href="" id="load-clear">Clear Grid</a>
+            </p>
+        
+            <h1>Links</h1>
+            <p>
+            <a href="http://chrisdalke.com/projects">< Back to Projects</a>
+            <a href="http://chrisdalke.com">< chrisdalke.com</a>
+            </p>
+        </div>
+
+    </div>
+
+    <div id="grid"></div>
+
+    <div class="canvas" id="canvas-holder">
+    </div>
+
+    <!--
+    <div class="button controls-button">
+        An HTML Experiment by Chris Dalke
+    </div>
+-->
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="phaser.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
